@@ -5,8 +5,5 @@ class Solution(object):
         :rtype: int
         """
 
-        for i, wealth in enumerate(accounts):
-            accounts[i] = sum(wealth)
-
-        return max(accounts)
+        return max(map(sum, accounts))
         
