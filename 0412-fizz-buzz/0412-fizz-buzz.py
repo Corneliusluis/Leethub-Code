@@ -5,5 +5,5 @@ class Solution(object):
         :rtype: List[str]
         """
         
-        return ["FizzBuzz" if (x+1) % 3 == 0 and (x+1) % 5 == 0 else "Fizz" if (x+1) % 3 == 0 else "Buzz" if (x+1) % 5 == 0 else str(x+1) for x in range(n)]
+        return ["Fizz" * (not i % 3) + "Buzz" * (not i % 5) or str(i) for i in range(1, n+1)]
         
