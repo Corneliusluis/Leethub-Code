@@ -14,4 +14,6 @@ class Solution(object):
 #         return False
         
         # using Counter Library, but implement it in one liner
-        return not collections.Counter(ransomNote) - collections.Counter(magazine)
+        # return not collections.Counter(ransomNote) - collections.Counter(magazine)
+        
+        return all(ransomNote.count(i) <= magazine.count(i) for i in set(ransomNote))
