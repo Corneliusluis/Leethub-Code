@@ -5,6 +5,7 @@ class Solution(object):
         :rtype: bool
         """
         
+        # using stack data structure
         stack = []
         dicts = {")": "(", "]": "[", "}": "{"}
         
